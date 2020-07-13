@@ -23,6 +23,18 @@ $(document).ready(
     }
 );
    
+        
+               $(document).ready(function(){
+    $(window).scroll(function() {    
+       var scroll = $(window).scrollTop();
+       if (scroll > 100) {
+            $(".topnav").addClass("sticky");
+       } else {
+            $(".topnav").removeClass("sticky");
+       }
+    });
+});
+        
 $(document).ready(function(){
 	  $(".carousel slide").sectionslider({
 	     loop:true,

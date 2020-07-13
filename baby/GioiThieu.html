@@ -23,6 +23,19 @@
         <script src="./js/index.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
+     <script type="text/javascript">
+                   $(document).ready(function(){
+    $(window).scroll(function() {    
+       var scroll = $(window).scrollTop();
+       if (scroll > 100) {
+            $(".topnav").addClass("sticky");
+       } else {
+            $(".topnav").removeClass("sticky");
+       }
+    });
+});
+      
+ </script>
     <body>
         <div class="main-body">
             <header>
@@ -54,23 +67,25 @@
                            <img src="./img/logo-happy-babies.png">
                        </a>
                    </div>
-                   <div class="topnav" id="myTopnav">
-                    <ul class="menu">
-                        <li><a href="#">TRANG CHỦ</a></li>
-                        <li><a href="#">BỘ SƯU TẬP</a>    
-                        </li>
-                        <li><a href="#">SẢN PHẨM</a>
-                            <ul class="sub-menu-2 ">
-                                <li><a href="#">SẢN PHẨM STYLE 1</a></li>
-                                <li><a href="#">SẢN PHẨM STYLE 2</a></li>
-                            </ul>  
-                        </li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">GIỚI THIỆU</a></li>
-                        
-                    </ul>
-                    <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a> -->
-                  </div>
+                   <nav>
+                    <div class="topnav" id="myTopnav">
+                        <ul class="menu">
+                            <li><a href="home.html">TRANG CHỦ</a></li>
+                            <li><a href="BoSuuTap.html">BỘ SƯU TẬP</a>    
+                            </li>
+                            <li><a href="SanPham.html">SẢN PHẨM</a>
+                                <ul class="sub-menu-2 ">
+                                    <li><a href="SanPham.html">SẢN PHẨM STYLE 1</a></li>
+                                    <li><a href="SanPham.html">SẢN PHẨM STYLE 2</a></li>
+                                </ul>  
+                            </li>
+                            <li><a href="blog.html">BLOG</a></li>
+                            <li><a href="GioiThieu.html">GIỚI THIỆU</a></li>
+                            
+                        </ul>
+                        <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a> -->
+                      </div>
+                    </nav>
                   <nav role="navigation">
                     <div id="menuToggle" class="top-nav-2">
                       <input type="checkbox" />
@@ -78,15 +93,15 @@
                       <span></span>
                       <span></span>
                       <ul id="menu">
-                        <a href="#"><li>TRANG CHỦ</li></a>
-                        <a href="#"><li>BỘ SƯU TẬP</li></a>
-                        <a href="#"><li>SẢN PHẨM</li>
+                        <a href="home.html"><li>TRANG CHỦ</li></a>
+                        <a href="BoSuuTap.html"><li>BỘ SƯU TẬP</li></a>
+                        <a href="SanPham.html"><li>SẢN PHẨM</li>
                             <ul class="sub-menu-2 ">
-                                <li><a href="#">SẢN PHẨM STYLE 1</a></li>
-                                <li><a href="#">SẢN PHẨM STYLE 2</a></li>
+                                <li><a href="SanPham.html">SẢN PHẨM STYLE 1</a></li>
+                                <li><a href="SanPham.html">SẢN PHẨM STYLE 2</a></li>
                             </ul>  </a>
-                        <a href="#"><li>BLOG</li></a>
-                        <a href="#"><li>GIỚI THIỆU</li></a>
+                        <a href="blog.html"><li>BLOG</li></a>
+                        <a href="GioiThieu.html"><li>GIỚI THIỆU</li></a>
                       </ul>
                     </div>
                   </nav>
@@ -247,7 +262,7 @@
                 </div>
                 <div class="bottom-footer text-center">
                     <div class="container">
-                        <p>Copyright © 2020 Happy Babies.<a rel="nofollow" target="_blank" href="//www.haravan.com" class="powerd__haravan">Powered by Haravan</a></p>
+                    <p>Copyright © 2020 Duc.<a rel="nofollow" target="_blank" href="//www.haravan.com" class="powerd__haravan">Powered by Duc</a></p>
                         <div class="social-list">
                             <a href="/" class="fa fa-facebook"></a>
                             <a href="/" class="fa fa-google"></a>
